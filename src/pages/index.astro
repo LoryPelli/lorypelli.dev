@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Repos from '../components/Repos.svelte';
+import Birthday from '../components/Birthday.svelte';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const GITHUB = 'https://github.lorypelli.dev/';
 ---
 
 <Layout>
-	<Welcome />
+    <span>Hi, I'm LoryPelli</span>
+    <span>My birthday will be in:</span>
+    <Birthday client:only />
+    <span>This is my portfolio</span>
+    <span
+        >I'm a developer and I'm really active on github (I should touch grass
+        ik)</span
+    >
+    <img
+        src="https://streak-stats.demolab.com/?user=LoryPelli&theme=dark&hide_border=true"
+    />
+    <span
+        >Here is my github btw: <a
+            href={GITHUB}
+            class="text-blue-600 hover:underline">{GITHUB}</a
+        ></span
+    >
+    <Repos client:only />
 </Layout>
