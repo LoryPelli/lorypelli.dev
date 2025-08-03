@@ -1,5 +1,5 @@
 {
-    "name": "lorypelli.dev",
+    "name": "portfolio",
     "type": "module",
     "scripts": {
         "dev": "astro dev",
