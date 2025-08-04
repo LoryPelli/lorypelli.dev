@@ -37,6 +37,7 @@
     });
 </script>
 
+<span>My birthday will be in:</span>
 <div class="flex gap-x-2">
     <div class="flex flex-col items-center">
         <span>{Math.round(diff.years)}</span>
