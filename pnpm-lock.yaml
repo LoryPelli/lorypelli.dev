@@ -26,6 +26,9 @@ importers:
       svelte:
         specifier: ^5.37.3
         version: 5.37.3
+      svelte-sonner:
+        specifier: ^1.0.5
+        version: 1.0.5(svelte@5.37.3)
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
@@ -1800,6 +1803,11 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
+  runed@0.28.0:
+    resolution: {integrity: sha512-k2xx7RuO9hWcdd9f+8JoBeqWtYrm5CALfgpkg2YDB80ds/QE4w0qqu34A7fqiAwiBBSBQOid7TLxwxVC27ymWQ==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   s.color@0.0.15:
     resolution: {integrity: sha512-AUNrbEUHeKY8XsYr/DYpl+qk5+aM+DChopnWOPEzn8YKzOhv4l2zH6LzZms3tOZP3wwdOyc0RmTciyi46HLIuA==}
 
@@ -1864,6 +1872,11 @@ packages:
   supports-color@10.0.0:
     resolution: {integrity: sha512-HRVVSbCCMbj7/kdWF9Q+bbckjBHLtHMEoJWlkmYzzdwhYMkjkOwubLM6t7NbWKjgKamGDrWL1++KrjUO1t9oAQ==}
     engines: {node: '>=18'}
+
+  svelte-sonner@1.0.5:
+    resolution: {integrity: sha512-9dpGPFqKb/QWudYqGnEz93vuY+NgCEvyNvxoCLMVGw6sDN/3oVeKV1xiEirW2E1N3vJEyj5imSBNOGltQHA7mg==}
+    peerDependencies:
+      svelte: ^5.0.0
 
   svelte2tsx@0.7.42:
     resolution: {integrity: sha512-PSNrKS16aVdAajoFjpF5M0t6TA7ha7GcKbBajD9RG3M+vooAuvLnWAGUSC6eJL4zEOVbOWKtcS2BuY4rxPljoA==}
@@ -4065,6 +4078,11 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.46.2
       fsevents: 2.3.3
 
+  runed@0.28.0(svelte@5.37.3):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.37.3
+
   s.color@0.0.15: {}
 
   sass-formatter@0.7.9:
@@ -4154,6 +4172,11 @@ snapshots:
       s.color: 0.0.15
 
   supports-color@10.0.0: {}
+
+  svelte-sonner@1.0.5(svelte@5.37.3):
+    dependencies:
+      runed: 0.28.0(svelte@5.37.3)
+      svelte: 5.37.3
 
   svelte2tsx@0.7.42(svelte@5.37.3)(typescript@5.9.2):
     dependencies:

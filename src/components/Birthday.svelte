@@ -4,7 +4,7 @@
     const currentYear = $state(new Date().getFullYear());
     const currentMonth = $state(new Date().getMonth() + 1);
     const currentDay = $state(new Date().getDay());
-    const year = $derived(() => {
+    const year = $state(() => {
         if (
             currentMonth > birthMonth ||
             (currentMonth == birthMonth && currentDay > birthDay)
@@ -15,7 +15,7 @@
     });
     const birthMonth = 5;
     const birthDay = 3;
-    const difference = $derived(() =>
+    const difference = $state(() =>
         nextBirthday.diffNow([
             'years',
             'months',
