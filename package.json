@@ -9,14 +9,14 @@
         "format": "prettier --write ."
     },
     "dependencies": {
-        "@astrojs/cloudflare": "^12.6.2",
+        "@astrojs/cloudflare": "^12.6.7",
         "@astrojs/svelte": "^7.1.0",
-        "@tailwindcss/vite": "^4.1.11",
-        "astro": "^5.12.8",
+        "@tailwindcss/vite": "^4.1.12",
+        "astro": "^5.13.5",
         "luxon": "^3.7.1",
-        "svelte": "^5.37.3",
+        "svelte": "^5.38.6",
         "svelte-sonner": "^1.0.5",
-        "tailwindcss": "^4.1.11"
+        "tailwindcss": "^4.1.12"
     },
     "devDependencies": {
         "@types/luxon": "^3.7.1",
@@ -25,6 +25,6 @@
         "prettier-plugin-organize-imports": "^4.2.0",
         "prettier-plugin-svelte": "^3.4.0",
         "prettier-plugin-tailwindcss": "^0.6.14",
-        "wrangler": "^4.27.0"
+        "wrangler": "^4.33.0"
     }
 }

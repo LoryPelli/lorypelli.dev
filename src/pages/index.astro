@@ -2,8 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Repos from '../components/Repos.svelte';
 import Birthday from '../components/Birthday.svelte';
-
-const GITHUB = 'https://github.lorypelli.dev/';
+import { BASE_URL, GITHUB_URL } from '../utils/url';
+const paths = ['general', 'contributions', 'languages'];
 ---
 
 <Layout>
@@ -14,15 +14,21 @@ const GITHUB = 'https://github.lorypelli.dev/';
         >I'm a developer and I'm really active on github (I should touch grass
         ik)</span
     >
-    <img
-        src="https://streak-stats.demolab.com/?user=LoryPelli&theme=dark&hide_border=true"
-        loading="lazy"
-        decoding="async"
-    />
+    <div class="flex flex-col gap-y-1">
+        {
+            paths.map((p) => (
+                <img
+                    src={`${BASE_URL}/stats/${p}`}
+                    loading="lazy"
+                    decoding="async"
+                />
+            ))
+        }
+    </div>
     <span
         >Here is my github btw: <a
-            href={GITHUB}
-            class="text-blue-600 hover:underline">{GITHUB}</a
+            href={GITHUB_URL}
+            class="text-blue-600 hover:underline">{GITHUB_URL}</a
         ></span
     >
     <Repos client:only />
