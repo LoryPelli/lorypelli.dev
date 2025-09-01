@@ -1,6 +1,6 @@
 export const BASE_URL = import.meta.env.DEV
-    ? 'http://localhost:4321'
-    : 'https://lorypelli.dev';
+    ? 'http://127.0.0.1:8787'
+    : 'https://stats.lorypelli.dev';
 
 export const GITHUB_URL = 'https://github.lorypelli.dev/';
 
