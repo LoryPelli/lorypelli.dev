@@ -1,11 +1,5 @@
 ---
-import { stats } from '../../utils/url';
+import getStats from '../../utils/stats';
 
-const res = await fetch(stats.url.languages);
-
-return new Response(res.body, {
-    headers: {
-        'Content-Type': res.headers.get('Content-Type') || '',
-    },
-});
+return getStats('languages');
 ---
