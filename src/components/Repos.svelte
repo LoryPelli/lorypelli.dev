@@ -37,11 +37,12 @@
         {#each repos as repo}
             <a
                 href={repo.html_url}
+                target="_blank"
                 class="flex flex-col justify-center rounded-md border-2 p-2 hover:bg-gray-200"
             >
                 {#if repo.archived}
                     <div
-                        class="flex justify-center rounded-md bg-red-600 py-1 text-center font-bold text-white"
+                        class="flex justify-center rounded-md bg-red-600 p-1 font-bold text-white"
                     >
                         <span>This repository was archived!</span>
                     </div>
